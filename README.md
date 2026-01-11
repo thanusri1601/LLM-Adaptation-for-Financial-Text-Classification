@@ -35,22 +35,22 @@ We fine-tune **RoBERTa** for a **3-class sentiment classification** task in the 
 ### Let us try to check the performance of fine tuned model for a positive sentiment with confidence 
 <p align="center">
    
-  <img src="assets/output1.jpeg" width="700">
+  <img src="assets/output1.jpeg" width="900">
 </p>
 
 
 ### Let us try to check the performance of fine tuned model for a neutral sentiment with confidence
 <p align="center">
   
-  <img src="assets/output2.jpeg" width="700">
+  <img src="assets/output2.jpeg" width="900">
 </p>
 
 ### Comparison of performance of the model before and after fine tuning
 <p align="center">
   
-  <img src="assets/image333.png" width="550">
+  <img src="assets/image333.png" width="600">
 </p>
----
+
 
 ## 🗂 Dataset
 
