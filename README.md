@@ -52,20 +52,14 @@ We fine-tune **RoBERTa** for a **3-class sentiment classification** task in the 
 </p>
 
 
-## 🗂 Dataset
+## Dataset
 
 **Source:**  
 `FinanceMTEB/financial_phrasebank` (Hugging Face)
 
-**Task:**  
-Classify financial sentences into:
-- Positive  
-- Neutral  
-- Negative  
-
 ---
 
-## 🧠 Model
+## Model
 
 - Base Model: `roberta-base`
 - Task: Sequence Classification
@@ -73,107 +67,61 @@ Classify financial sentences into:
 - Fine-tuning Method: **LoRA (PEFT)**
 
 ---
-
-## ⚙️ Installation
-
-Install required libraries:
-
-```bash
-pip install datasets
-pip install transformers
-pip install peft
-pip install evaluate
-
-
-
-
-
-
-
-
-
-
-
 ## Setup
 
-### 1. Clone the Repository
-git clone (https://github.com/thanusri1601/Corrective-RAG-System-for-Knowledge-Retrieval.git)  
-cd ~CRAG-System
-
+Run the colab file
+ 
 ---
 
-### 2. Create Virtual Environment
-python3 -m venv venv  
-source venv/bin/activate  
+## Hugging Face Deployment
 
+The fine-tuned LoRA-based RoBERTa model was deployed on the Hugging Face Hub for easy access and sharing.  
+This enables seamless inference through Hugging Face’s API and integration into downstream applications.  
+The hosted model supports real-time financial sentiment analysis with minimal infrastructure overhead.  
+Model versioning and public availability make it suitable for research, demos, and production use.
 
----
-
-### 3. Install Dependencies
-pip install --upgrade pip  
-pip install -r requirements.txt  
-
----
-
-## Running the Application
-
-### Local Execution
-streamlit run app.py  
-
----
-
-## AWS EC2 Deployment
-
-This project is deployed on an AWS EC2 Ubuntu instance.
-
-### Deployment Steps
-1. Launch an Ubuntu EC2 instance  
-2. Open port 8501 in the EC2 security group  
-3. Clone this repository on the EC2 instance  
-4. Create and activate a Python virtual environment  
-5. Install required dependencies  
-6. Run the Streamlit application  
-
-Run the application on EC2 using:
-streamlit run app.py --server.port 8501 --server.address 0.0.0.0  
 
 ## Live Deployment
-http://ec2-3-91-215-180.compute-1.amazonaws.com:8501/
+https://huggingface.co/spaces/thanusriaenugula/financial-sentiment-lora
 
 ## Output
 
-- Interactive Streamlit-based user interface  
-- Corrective Retrieval-Augmented Generation workflow  
-- Reduced hallucinations through validation and corrective retrieval  
-- Publicly accessible AWS EC2 deployment  
+- Interactive hugging face user interface   
+- Comparision of the performance before and after fine tuning  
+- Publicly accessible hugging face deployment deployment  
 
 ---
 
 ## Technologies Used
 
-- Python  
-- LangChain  
-- LangGraph  
-- FAISS Vector Store  
-- OpenAI API  
-- Streamlit  
-- AWS EC2  
+- **Programming Language:** Python  
+- **Model:** RoBERTa (roberta-base)  
+- **Fine-Tuning Method:** LoRA (PEFT)  
+- **Libraries & Frameworks:**
+  - Hugging Face Transformers  
+  - Datasets  
+  - PEFT  
+  - Evaluate  
+  - PyTorch  
+- **Dataset:** Financial PhraseBank (FinanceMTEB)  
+- **Platform:** Google Colab / Local GPU  
+- **Deployment:** Hugging Face Hub  
 
 ---
 
 ## Key Contributions
 
-- Implemented Corrective Retrieval-Augmented Generation (CRAG) to improve factual grounding  
-- Designed an agent-based workflow using LangGraph  
-- Introduced validation and corrective retrieval to mitigate hallucinations  
-- Deployed an end-to-end LLM system on AWS EC2  
+- Implemented **parameter-efficient fine-tuning (LoRA)** on RoBERTa for financial sentiment classification, reducing training cost and memory usage.
+- Fine-tuned the model on the **Financial PhraseBank** dataset for 3-class sentiment prediction (Positive, Neutral, Negative).
+- Built an end-to-end NLP pipeline including data loading, tokenization, training, and evaluation.
+- Integrated **PEFT (LoRA)** with Hugging Face Transformers for efficient model adaptation.
+- Evaluated model performance using accuracy metrics on a validation split.
+- Prepared the model for **Hugging Face Hub deployment** for easy sharing and inference.
 
 ---
 
 ## Author
 
 Thanusri A  
-
-
 
 
