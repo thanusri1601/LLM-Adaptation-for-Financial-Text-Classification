@@ -25,7 +25,7 @@ We fine-tune **RoBERTa** for a **3-class sentiment classification** task in the 
 ## Workflow Graph
 
 <p align="center">
-  <img src="assets/image.png" width="200">
+  <img src="assets/img1.png" width="450">
 </p>
 
 ---
