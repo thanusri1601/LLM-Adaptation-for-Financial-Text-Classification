@@ -1,4 +1,4 @@
-# Financial Sentiment Analysis with LoRA Fine-Tuning (RoBERTa)
+# LLM-Adaptation-for-Financial-Text-Classification with LoRA Fine-Tuning (RoBERTa)
 
 This project demonstrates **parameter-efficient fine-tuning** of a **RoBERTa** model using **LoRA (Low-Rank Adaptation)** for **financial sentiment classification**.  
 The model is trained on the **Financial PhraseBank** dataset to classify text into:
